@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.philforms/philforms-mcp",
   "title": "PhilForms",
-  "description": "Find, fill and verify official Philippine government forms (BIR, SSS, PhilHealth, Pag-IBIG, CSC and more).",
+  "description": "Find, fill and verify official Philippine government forms: BIR, SSS, PhilHealth, Pag-IBIG, CSC.",
   "repository": { "url": "https://github.com/philforms/philforms-mcp", "source": "github" },
   "version": "1.0.0",
   "websiteUrl": "https://philforms.com/developers",
