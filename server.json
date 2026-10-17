@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.philforms/philforms-mcp",
+  "title": "PhilForms",
+  "description": "Find, fill and verify official Philippine government forms (BIR, SSS, PhilHealth, Pag-IBIG, CSC and more).",
+  "repository": { "url": "https://github.com/philforms/philforms-mcp", "source": "github" },
+  "version": "1.0.0",
+  "websiteUrl": "https://philforms.com/developers",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "philforms-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "PDFPHILE_API_KEY", "description": "Your PhilForms API key (pk_test_… free and watermarked, or pk_live_…). Get one at https://philforms.com/account", "isRequired": true, "isSecret": true },
+        { "name": "PDFPHILE_OUT_DIR", "description": "Folder for filled PDFs (default ./pdfphile-out)", "isRequired": false }
+      ]
+    }
+  ]
+}

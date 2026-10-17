@@ -1,0 +1,14 @@
+{
+  "name": "philforms-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for PhilForms: find, fill and verify official Philippine government forms (BIR, SSS, PhilHealth, Pag-IBIG, CSC, GSIS, COA, GPPB) from any MCP client.",
+  "type": "module",
+  "bin": { "philforms-mcp": "server.js" },
+  "files": ["server.js", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "model-context-protocol", "philippines", "bir", "sss", "philhealth", "pagibig", "government-forms", "pdf", "form-filling"],
+  "homepage": "https://philforms.com/developers",
+  "repository": { "type": "git", "url": "git+https://github.com/philforms/philforms-mcp.git" },
+  "license": "MIT",
+  "mcpName": "io.github.philforms/philforms-mcp"
+}
