@@ -1,0 +1,36 @@
+{
+  "manifest_version": "0.2",
+  "name": "philforms-mcp",
+  "display_name": "PhilForms",
+  "version": "1.0.0",
+  "description": "Find, fill and verify official Philippine government forms: BIR, SSS, PhilHealth, Pag-IBIG, CSC.",
+  "author": { "name": "Bygelo Information Technology Solutions", "email": "support@philforms.com", "url": "https://philforms.com" },
+  "homepage": "https://philforms.com/developers",
+  "repository": { "type": "git", "url": "https://github.com/philforms/philforms-mcp" },
+  "license": "MIT",
+  "keywords": ["philippines", "bir", "sss", "philhealth", "pagibig", "government-forms", "pdf"],
+  "server": {
+    "type": "node",
+    "entry_point": "server.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server.js"],
+      "env": {
+        "PDFPHILE_API_KEY": "${user_config.api_key}",
+        "PDFPHILE_OUT_DIR": "${user_config.out_dir}"
+      }
+    }
+  },
+  "tools": [
+    { "name": "search_forms", "description": "Find a form by name, number or agency" },
+    { "name": "get_form_parameters", "description": "Every input of a form: name, printed label, format" },
+    { "name": "check_form_values", "description": "Check values before filling; refused values come back with the reason" },
+    { "name": "fill_form", "description": "Fill a form and save the PDF" },
+    { "name": "verify_pdf", "description": "Check a PhilForms PDF's seal" }
+  ],
+  "user_config": {
+    "api_key": { "type": "string", "title": "PhilForms API key", "description": "pk_test_… (free, watermarked) or pk_live_…, from https://philforms.com/account", "sensitive": true, "required": true },
+    "out_dir": { "type": "directory", "title": "Folder for filled PDFs", "description": "Where filled PDFs are saved", "required": false, "default": "${HOME}/Documents/philforms" }
+  },
+  "compatibility": { "runtimes": { "node": ">=18.0.0" } }
+}
