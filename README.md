@@ -21,21 +21,25 @@ Not affiliated with BIR, SSS, PhilHealth, Pag-IBIG or any government agency. Phi
 
 Get an API key at [philforms.com/account](https://philforms.com/account) (`pk_test_…` is free and watermarked).
 
+**Claude Desktop:** download [philforms-mcp-1.0.0.mcpb](https://github.com/philforms/philforms-mcp/releases/latest) and open it; it asks for the key.
+
+**Any MCP client:**
+
 ```json
 {
   "mcpServers": {
     "philforms": {
       "command": "npx",
-      "args": ["-y", "philforms-mcp"],
+      "args": ["-y", "github:philforms/philforms-mcp"],
       "env": { "PDFPHILE_API_KEY": "pk_test_…" }
     }
   }
 }
 ```
 
-Or straight from GitHub: `"args": ["-y", "github:philforms/philforms-mcp"]`.
-
 Filled PDFs go to `PDFPHILE_OUT_DIR` (default `./pdfphile-out`). Requires Node 18+. No dependencies.
+
+Listed in the [official MCP registry](https://registry.modelcontextprotocol.io/v0/servers?search=philforms) as `io.github.philforms/philforms-mcp`.
 
 API reference: [philforms.com/developers](https://philforms.com/developers) · OpenAPI: `https://philforms.com/api/v1/openapi.json`
 
