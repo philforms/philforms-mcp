@@ -33,6 +33,8 @@ Get an API key at [philforms.com/account](https://philforms.com/account) (`pk_te
 }
 ```
 
+Or straight from GitHub: `"args": ["-y", "github:philforms/philforms-mcp"]`.
+
 Filled PDFs go to `PDFPHILE_OUT_DIR` (default `./pdfphile-out`). Requires Node 18+. No dependencies.
 
 API reference: [philforms.com/developers](https://philforms.com/developers) · OpenAPI: `https://philforms.com/api/v1/openapi.json`
