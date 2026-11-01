@@ -2,7 +2,7 @@
 
 Lets Claude, Cursor or any MCP client find, fill and verify official Philippine government forms — BIR, SSS,
 PhilHealth, Pag-IBIG, CSC, GSIS, COA, GPPB — through the [PhilForms](https://philforms.com) API. Every input on
-1,342 forms is mapped to its printed box, so a TIN lands digit by digit in its cells, and values the form cannot
+every supported form is mapped to its printed box, so a TIN lands digit by digit in its cells, and values the form cannot
 hold are refused with the reason instead of being "fixed".
 
 Not affiliated with BIR, SSS, PhilHealth, Pag-IBIG or any government agency. PhilForms fills and prints; you file.
